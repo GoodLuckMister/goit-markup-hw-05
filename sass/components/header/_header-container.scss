@@ -1,0 +1,19 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.nav-list {
+  display: flex;
+  &-items:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.nav {
+  margin-right: 215px;
+}
+.header {
+  border: 1px solid getColor("background-header");
+}

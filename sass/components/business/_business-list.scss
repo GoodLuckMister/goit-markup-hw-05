@@ -1,0 +1,28 @@
+.business_list {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 95px;
+  }
+  &_item {
+    width: 270px;
+  }
+  &_box {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: getColor("background-color");
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+.business_symbol {
+  width: 70px;
+  height: 70px;
+}
+.business-container {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}

@@ -1,0 +1,23 @@
+.team_list_title {
+  font-size: 16px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0;
+}
+.team_list_text {
+  font-size: 16px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+  color: getColor("text-mini");
+  text-align: center;
+  margin-top: 0;
+}
+
+.team-container {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.team {
+  background-color: getColor("background-color");
+}

@@ -1,0 +1,29 @@
+.address_list_link {
+  font-size: 14px;
+  line-height: 0.6;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: getColor("text-mini");
+  &-map {
+    color: getColor("background");
+  }
+}
+.footer-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-box .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.address_list_item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.address_list {
+  display: inline-block;
+}
+.footer {
+  position: relative;
+  background-color: getColor("foreground");
+}

@@ -1,0 +1,30 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  &_link {
+    width: 170px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid getColor("border");
+    border-radius: 4px;
+    outline: 0;
+    &:hover,
+    &:focus {
+      border: 1px solid getColor("hover");
+    }
+    &:hover .clients_symbol,
+    &:focus .clients_symbol {
+      fill: getColor("hover");
+    }
+  }
+  &_symbol {
+    fill: getColor("border");
+  }
+}
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

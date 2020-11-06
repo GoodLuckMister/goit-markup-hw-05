@@ -1,0 +1,46 @@
+.text-box {
+  padding: 30px 20px;
+  border: 1px solid getColor("border-portfolio");
+}
+.portfolio_list {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 95px;
+
+  &_item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
+  }
+  &_link {
+    display: block;
+
+    &:hover,
+    &:focus {
+      box-shadow: $item-hover;
+      outline: 1px solid getColor("border-portfolio");
+    }
+  }
+  &_title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0.5;
+    letter-spacing: 0.06em;
+    color: getColor("text");
+    margin-top: 0;
+  }
+  &_text {
+    font-size: 16px;
+    line-height: 0.5;
+    letter-spacing: 0.03em;
+    color: getColor("text-mini");
+    margin-bottom: 0;
+  }
+}

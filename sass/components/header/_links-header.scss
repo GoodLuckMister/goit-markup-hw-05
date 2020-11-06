@@ -1,0 +1,30 @@
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.88;
+  color: getColor("text");
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: getColor("hover");
+    fill: getColor("hover");
+  }
+  &_activ {
+    color: getColor("hover");
+  }
+
+  &_cont {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: getColor("text-mini");
+    fill: getColor("text-mini");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_symbol {
+      margin-right: 10px;
+    }
+  }
+}
