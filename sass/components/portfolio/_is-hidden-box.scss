@@ -1,0 +1,26 @@
+.hidden_box {
+  position: relative;
+  width: 370px;
+  height: 295px;
+  overflow: hidden;
+  &_text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 25px 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    transform: translateY(100%);
+    background-color: getColor("is-hidden");
+    color: getColor("background");
+    transition: transform $time $cubic;
+    .portfolio_list_link:hover &,
+    .portfolio_list_link:focus & {
+      transform: translateY(0%);
+    }
+  }
+}

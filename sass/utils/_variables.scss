@@ -20,6 +20,7 @@ $colors: (
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+$time: 250ms;
 $gradient: linear-gradient(to right, rgba(0, 0, 0, 0.5));
 $size-mobile: 480px;
 $size-tablet: 768px;

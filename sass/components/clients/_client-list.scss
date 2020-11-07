@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   width: 1170px;
+  &_symbol {
+    fill: getColor("border");
+    transition: fill $time $cubic;
+  }
   &_link {
     width: 170px;
     height: 90px;
@@ -11,6 +15,7 @@
     border: 1px solid getColor("border");
     border-radius: 4px;
     outline: 0;
+    transition: border $time $cubic;
     &:hover,
     &:focus {
       border: 1px solid getColor("hover");
@@ -19,9 +24,6 @@
     &:focus .clients_symbol {
       fill: getColor("hover");
     }
-  }
-  &_symbol {
-    fill: getColor("border");
   }
 }
 .clients-container {

@@ -13,6 +13,7 @@
   cursor: pointer;
   border: none;
   outline: 0;
+  transition: background $time $cubic, color $time $cubic;
   &:hover,
   &:focus {
     background-color: getColor("hover");

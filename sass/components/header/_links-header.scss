@@ -5,6 +5,7 @@
   color: getColor("text");
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color $time $cubic, fill $time $cubic;
   &:hover,
   &:focus {
     color: getColor("hover");

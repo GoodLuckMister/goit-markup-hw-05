@@ -21,6 +21,7 @@
   }
   &_link {
     display: block;
+    transition: box-shadow $time $cubic;
 
     &:hover,
     &:focus {
