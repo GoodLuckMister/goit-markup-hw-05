@@ -12,13 +12,13 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <form action="none">
-            <p class="form_text">Оставьте свои данные, мы вам перезвоним</p>
+            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
             <div class="input-box">
-              <label class="input-box_label">
-                <input class="input-box_input" type="text" placeholder=" " />
-                <span class="input-box_label_text">Имя</span>
+              <label class="input-box__label">
+                <input class="input-box__input" type="text" placeholder=" " />
+                <span class="input-box__label--text">Имя</span>
       
-                <svg class="input-box_label_icon" width="18" height="18">
+                <svg class="input-box__label--icon" width="18" height="18">
                   <use href="./symbol-defs.svg#person">
       
                   </use>
@@ -28,10 +28,10 @@
               </label>
             </div>
             <div class="input-box">
-              <label class="input-box_label">
-                <input class="input-box_input" type="text" />
-                <span class="input-box_label_text">Телефон</span>
-                <svg class="input-box_label_icon" width="18" height="18">
+              <label class="input-box__label">
+                <input class="input-box__input" type="text" />
+                <span class="input-box__label--text">Телефон</span>
+                <svg class="input-box__label--icon" width="18" height="18">
                   <use href="./symbol-defs.svg#phone">
       
                   </use>
@@ -39,11 +39,11 @@
               </label>
             </div>
             <div class="input-box">
-              <label class="input-box_label">
+              <label class="input-box__label">
       
-                <input class="input-box_input" type="text" />
-                <span class="input-box_label_text">Почта</span>
-                <svg class="input-box_label_icon" width="18" height="18">
+                <input class="input-box__input" type="text" />
+                <span class="input-box__label--text">Почта</span>
+                <svg class="input-box__label--icon" width="18" height="18">
                   <use href="./symbol-defs.svg#email">
       
                   </use>
@@ -56,13 +56,13 @@
       
               <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
             </div>
-            <div class="checkbox_box">
+            <div class="checkbox">
       
       
-              <label class="checkbox_cursor">
-                <input class="checkbox" type="checkbox" />
-                <span class="checkbox_icon"></span>Соглашаюсь с рассылкой и принимаю
-                <a class="checkbox_icon_link" href="./README.md">Условия договора</a>
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и принимаю
+                <a class="checkbox__link" href="./README.md">Условия договора</a>
               </label>
             </div>
       
@@ -81,21 +81,21 @@
           Web<span class="logo-decore">Studio</span>
         </a>
         <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-list-items"><a class="link link_activ" href="./index.html">Студия</a></li>
-            <li class="nav-list-items"><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav-list-items"><a class="link" href="#footer">Контакты</a></li>
+          <ul class="nav__list">
+            <li class="nav__items"><a class="link link--activ" href="./index.html">Студия</a></li>
+            <li class="nav__items"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav__items"><a class="link" href="#footer">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="nav-list">
-          <li class="nav-list-items"><a class="link link_cont" href="mailto:info@devstudio.com">
-            <svg class="link_cont_symbol" width="16" height="12">
+        <ul class="nav__list">
+          <li class="nav__items"><a class="link link__cont" href="mailto:info@devstudio.com">
+            <svg class="link__cont--symbol" width="16" height="12">
               <use href="./symbol-defs.svg#icon-envelope">
               </use>
             </svg>
             info@devstudio.com</a></li>
-          <li class="nav-list-items"><a class="link link_cont" href="tel:+380961111111">
-            <svg class="link_cont_symbol"  width="11" height="16">
+          <li class="nav__items"><a class="link link__cont" href="tel:+380961111111">
+            <svg class="link__cont--symbol"  width="11" height="16">
               <use href="./symbol-defs.svg#icon-smartphone">
               </use>
             </svg>
@@ -103,11 +103,13 @@
         </ul>
       </div>
     </header>
+    <main>
     <!--========================section hero================================-->
-   <main>
+   
     <section class="hero">
       <div class="container hero-container">
-        <h1 class="hero-title">Эффективные решения <span class="hero-title_decor">для вашего бизнеса</span></h1>
+        <h1 class="hero-container__title">Эффективные решения <span class="hero-container__title--decor">для вашего бизнеса</span>
+        </h1>
         <!-- <img src="./images/squoosh/Bg.jpg" alt="backgroung-image" /> -->
         <button class="button" type="button" data-modal-open>Заказать услугу</button>
       </div>
@@ -115,65 +117,70 @@
     <!--========================section business==========================-->
 
     <section>
-      <div class="container business-container">
-      <ul class="business_list">
-        <li class="business_list_item">
-            <div class="business_list_box">
-              <svg class="business_symbol">
+      <div class="container business">
+      <ul class="business__list">
+        <li class="business__item">
+            <div class="business__box">
+              <svg class="business__symbol">
                 <use href="./symbol-defs.svg#icon-Group"></use>
               </svg>
             </div>
-          <h2 class="business_list_title">Внимание к деталям</h2>
-          <p class="business_list_text">
+          <h2 class="business__title">Внимание к деталям</h2>
+          <p class="business__text">
             Идейные соображения, а также начало повседневной работы по
             формированию позиции.
           </p>
         </li>
-        <li class="business_list_item">
-          <div class="business_list_box">
-            <svg class="business_symbol">
+        <li class="business__item">
+          <div class="business__box">
+            <svg class="business__symbol">
               <use href="./symbol-defs.svg#icon-clock"></use>
             </svg>
           </div>
-          <h2 class="business_list_title">Пунктуальность</h2>
-          <p class="business_list_text">
+          <h2 class="business__title">Пунктуальность</h2>
+          <p class="business__text">
             Задача организации, в особенности же рамки и место обучения кадров
             влечет за собой.
           </p>
         </li>
-        <li class="business_list_item">
-          <div class="business_list_box">
-            <svg class="business_symbol">
+        <li class="business__item">
+          <div class="business__box">
+            <svg class="business__symbol">
               <use href="./symbol-defs.svg#icon-diagram"></use>
             </svg>
           </div>
-          <h2 class="business_list_title">Планирование</h2>
-          <p class="business_list_text">
+          <h2 class="business__title">Планирование</h2>
+          <p class="business__text">
             Равным образом консультация с широким активом в значительной степени
             обуславливает.
           </p>
         </li>
-        <li class="business_list_item">
-          <div class="business_list_box">
-            <svg class="business_symbol">
+        <li class="business__item">
+          <div class="business__box">
+            <svg class="business__symbol">
               <use href="./symbol-defs.svg#icon-astronaut"></use>
             </svg>
           </div>
-          <h2 class="business_list_title">Современные технологии</h2>
-          <p class="business_list_text">
+          <h2 class="business__title">Современные технологии</h2>
+          <p class="business__text">
             Значимость этих проблем настолько очевидна, что реализация плановых
             заданий.
           </p>
         </li>
       </ul>
-      <h3 class="other_title">Чем мы занимаемся</h3>
-      <ul class="business_list">
-        <li>
+      <h3 class="other-title">Чем мы занимаемся</h3>
+      <ul class="business__list">
+        <li class="business__image-box">
           <img src="./images/squoosh/business.jpg" alt="noot1" width="370" />
+          <p class="business__image-box--text">Десктопные приложения</p>
         </li>
-        <li><img src="./images/squoosh/mobile_app.jpg" alt="noot" width="370" /></li>
-        <li>
+        <li class="business__image-box">
+          <img src="./images/squoosh/mobile_app.jpg" alt="noot" width="370" />
+        <p class="business__image-box--text">Мобильные приложения</p>
+      </li>
+        <li class="business__image-box">
           <img src="./images/squoosh/borders.jpg" alt="noot2" width="370" />
+          <p class="business__image-box--text">Дизайнерские решения</p>
         </li>
       </ul>
       </div>
@@ -182,109 +189,109 @@
 
     <section class="team">
       <div class="container team-container">
-      <h2 class="other_title">Наша команда</h2>
-      <ul class="team_list">
-        <li class="team_list_item">
-          <img class="team_list_image" src="./images/squoosh/nikolay.jpg" alt="Nikolay" width="270" />
-          <h3 class="team_list_title">Николай Кучеренко</h3>
-          <p class="team_list_text">Product Designer</p>
-          <ul class="symbol_list">
-            <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.instagram.com/" target="_blank"
+      <h2 class="other-title">Наша команда</h2>
+      <ul class="team-container__list">
+        <li class="team-container__item">
+          <img class="team-container__image" src="./images/squoosh/nikolay.jpg" alt="Nikolay" width="270" />
+          <h3 class="team-container__title">Николай Кучеренко</h3>
+          <p class="team-container__text">Product Designer</p>
+          <ul class="symbol-list">
+            <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.instagram.com/" target="_blank"
                 rel="noopener noreferer" >
-              <svg class="symbol_list_image">
+              <svg class="symbol-list__image">
                 <use href="./symbol-defs.svg#icon-instagram"></use>
               </svg></a> </li>
-            <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferer">
-              <svg class="symbol_list_image">
+            <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferer">
+              <svg class="symbol-list__image">
                 <use href="./symbol-defs.svg#icon-facebook"></use>
               </svg></a></li>
-            <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferer">
-              <svg class="symbol_list_image">
+            <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.twitter.com/" target="_blank" rel="noopener noreferer">
+              <svg class="symbol-list__image">
                 <use href="./symbol-defs.svg#icon-twitter"></use>
               </svg></a></li>
-            <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer">
-              <svg class="symbol_list_image">
+            <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer">
+              <svg class="symbol-list__image">
                 <use href="./symbol-defs.svg#icon-linkedin"></use>
               </svg></a></li>
           </ul>
         </li>
-        <li class="team_list_item">
-          <img class="team_list_image" src="./images/squoosh/olga.jpg" alt="Olga" width="270" />
-          <h3 class="team_list_title">Ольга Иванова</h3>
-          <p class="team_list_text">Frontend Developer</p>
-              <ul class="symbol_list">
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.instagram.com/" target="_blank"
+        <li class="team-container__item">
+          <img class="team-container__image" src="./images/squoosh/olga.jpg" alt="Olga" width="270" />
+          <h3 class="team-container__title">Ольга Иванова</h3>
+          <p class="team-container__text">Frontend Developer</p>
+              <ul class="symbol-list">
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.instagram.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-instagram"></use>
                     </svg></a> </li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.facebook.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.facebook.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-facebook"></use>
                     </svg></a></li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.twitter.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.twitter.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-twitter"></use>
                     </svg></a></li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.linkedin.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.linkedin.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-linkedin"></use>
                     </svg></a></li>
               </ul>
         </li>
-        <li class="team_list_item">
-          <img class="team_list_image" src="./images/squoosh/andry.jpg" alt="Andry" width="270" />
-          <h3 class="team_list_title">Андрей Шевченко</h3>
-          <p class="team_list_text">Marketing</p>
-              <ul class="symbol_list">
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.instagram.com/" target="_blank"
+        <li class="team-container__item">
+          <img class="team-container__image" src="./images/squoosh/andry.jpg" alt="Andry" width="270" />
+          <h3 class="team-container__title">Андрей Шевченко</h3>
+          <p class="team-container__text">Marketing</p>
+              <ul class="symbol-list">
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.instagram.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-instagram"></use>
                     </svg></a> </li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.facebook.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.facebook.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-facebook"></use>
                     </svg></a></li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.twitter.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.twitter.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-twitter"></use>
                     </svg></a></li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.linkedin.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.linkedin.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-linkedin"></use>
                     </svg></a></li>
               </ul>
         </li>
-        <li class="team_list_item">
-          <img class="team_list_image" src="./images/squoosh/ivan.jpg" alt="Ivan" width="270" />
-          <h3 class="team_list_title">Иван Николаев</h3>
-          <p class="team_list_text">UI Designer</p>
-              <ul class="symbol_list">
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.instagram.com/" target="_blank"
+        <li class="team-container__item">
+          <img class="team-container__image" src="./images/squoosh/ivan.jpg" alt="Ivan" width="270" />
+          <h3 class="team-container__title">Иван Николаев</h3>
+          <p class="team-container__text">UI Designer</p>
+              <ul class="symbol-list">
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.instagram.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-instagram"></use>
                     </svg></a> </li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.facebook.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.facebook.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-facebook"></use>
                     </svg></a></li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.twitter.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.twitter.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-twitter"></use>
                     </svg></a></li>
-                <li class="symbol_list_item"><a class="symbol_list_link" href="https://www.linkedin.com/" target="_blank"
+                <li class="symbol-list__item"><a class="symbol-list__link" href="https://www.linkedin.com/" target="_blank"
                     rel="noopener noreferer">
-                    <svg class="symbol_list_image">
+                    <svg class="symbol-list__image">
                       <use href="./symbol-defs.svg#icon-linkedin"></use>
                     </svg></a></li>
               </ul>
@@ -293,25 +300,33 @@
       </div>
     </section>
     <!-- =============================clients================================ -->
-    <section class="section-clients">
-      <div class="container clients-container">
-      <h2 class="other_title">Постоянные клиенты</h2>
+    <section class="clients">
+      <div class="container clients-box">
+      <h2 class="other-title">Постоянные клиенты</h2>
       
-        <ul class="clients">
-          <li class="clients_item"><a class="clients_link" href=""><svg class="clients_symbol" width="44" height="49" ><use href="./symbol-defs.svg#icon-logo-1"></use></svg></a> </li>
-          <li class="clients_item"><a class="clients_link" href=""><svg class="clients_symbol" width="40" height="52">
+        <ul class="clients-box__list">
+          <li class="clients-box__item"><a class="clients-box__link" href=""><svg class="clients-box__symbol" width="44"
+                height="49">
+                <use href="./symbol-defs.svg#icon-logo-1"></use>
+              </svg></a> </li>
+          <li class="clients-box__item"><a class="clients-box__link" href=""><svg class="clients-box__symbol" width="40"
+                height="52">
                 <use href="./symbol-defs.svg#icon-logo-2"></use>
               </svg></a> </li>
-              <li class="clients_item"><a class="clients_link" href=""><svg class="clients_symbol"  width="41" height="43">
+              <li class="clients-box__item"><a class="clients-box__link" href=""><svg class="clients-box__symbol" width="41"
+                    height="43">
                     <use href="./symbol-defs.svg#icon-logo-3"></use>
                   </svg></a> </li>
-                  <li class="clients_item"><a class="clients_link" href=""><svg  class="clients_symbol" width="80" height="42">
+                  <li class="clients-box__item"><a class="clients-box__link" href=""><svg class="clients-box__symbol" width="80"
+                        height="42">
                         <use href="./symbol-defs.svg#icon-logo-4"></use>
                       </svg></a> </li>
-                      <li class="clients_item"><a class="clients_link" href=""><svg class="clients_symbol" width="59" height="47">
+                      <li class="clients-box__item"><a class="clients-box__link" href=""><svg class="clients-box__symbol" width="59"
+                            height="47">
                             <use href="./symbol-defs.svg#icon-logo-5"></use>
                           </svg></a> </li>
-                          <li class="clients_item"><a class="clients_link" href=""><svg class="clients_symbol" width="88" height="45">
+                          <li class="clients-box__item"><a class="clients-box__link" href=""><svg class="clients-box__symbol" width="88"
+                                height="45">
                                 <use href="./symbol-defs.svg#icon-logo-6"></use>
                               </svg></a> </li>
         </ul>
@@ -321,45 +336,46 @@
     <!--=========================footer=============================== -->
     <footer id="footer" class="footer">
       <div class="container footer-box">
-        <a class="logo " href="./index.html">Web
-        <span class="logo-footer">Studio</span>
-        </a>
+      
 
         <address class="address">
-          <ul class="address_list">
-            <li class="address_list_item">
-              <a class="address_list_link address_list_link-map "
+            <a class="logo " href="./index.html">Web
+              <span class="logo-footer">Studio</span>
+            </a>
+          <ul class="address__list">
+            <li class="address__item">
+              <a class="address__link address__link--map "
                 href="https://goo.gl/maps/5dLGJM3JufGwCpMH7"
                 target="_blank"
                 rel="noopener noreferer "
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="address_list_item"><a class="address_list_link" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
-            <li class="address_list_item"><a class="address_list_link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="address__item"><a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
+            <li class="address__item"><a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
-        <div class="symbol_footer">
-          <h3 class="symbol_footer_title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-            <ul class="symbol_footer_list">
-              <li class="symbol_list_item symbol_footer_list_item"><a class="symbol_list_link" href="https://www.instagram.com/" target="_blank"
+        <div class="symbol-box">
+          <h3 class="symbol-box__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <ul class="symbol-list">
+              <li class="symbol-list__item symbol-list__item--decor"><a class="symbol-list__link" href="https://www.instagram.com/" target="_blank"
                   rel="noopener noreferer">
-                  <svg class="symbol_list_image">
+                  <svg class="symbol-list__image">
                     <use href="./symbol-defs.svg#icon-instagram"></use>
                   </svg></a> </li>
-              <li class="symbol_list_item symbol_footer_list_item"><a class="symbol_list_link" href="https://www.facebook.com/" target="_blank"
+              <li class="symbol-list__item symbol-list__item--decor"><a class="symbol-list__link" href="https://www.facebook.com/" target="_blank"
                   rel="noopener noreferer">
-                  <svg class="symbol_list_image">
+                  <svg class="symbol-list__image">
                     <use href="./symbol-defs.svg#icon-facebook"></use>
                   </svg></a></li>
-              <li class="symbol_list_item symbol_footer_list_item"><a class="symbol_list_link" href="https://www.twitter.com/" target="_blank"
+              <li class="symbol-list__item symbol-list__item--decor"><a class="symbol-list__link" href="https://www.twitter.com/" target="_blank"
                   rel="noopener noreferer">
-                  <svg class="symbol_list_image">
+                  <svg class="symbol-list__image">
                     <use href="./symbol-defs.svg#icon-twitter"></use>
                   </svg></a></li>
-              <li class="symbol_list_item symbol_footer_list_item"><a class="symbol_list_link" href="https://www.linkedin.com/" target="_blank"
+              <li class="symbol-list__item symbol-list__item--decor"><a class="symbol-list__link" href="https://www.linkedin.com/" target="_blank"
                   rel="noopener noreferer">
-                  <svg class="symbol_list_image">
+                  <svg class="symbol-list__image">
                     <use href="./symbol-defs.svg#icon-linkedin"></use>
                   </svg></a></li>
             </ul>

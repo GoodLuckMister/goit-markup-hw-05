@@ -1,14 +1,24 @@
-.clients {
-  display: flex;
-  justify-content: space-between;
-  width: 1170px;
-  &_symbol {
+.clients-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+  }
+
+  &__item {
+    width: 170px;
+    height: 90px;
+  }
+  &__symbol {
     fill: getColor("border");
     transition: fill $time $cubic;
   }
-  &_link {
-    width: 170px;
-    height: 90px;
+
+  &__link {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,13 +30,9 @@
     &:focus {
       border: 1px solid getColor("hover");
     }
-    &:hover .clients_symbol,
-    &:focus .clients_symbol {
+    &:hover .clients-box__symbol,
+    &:focus .clients-box__symbol {
       fill: getColor("hover");
     }
   }
-}
-.clients-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }

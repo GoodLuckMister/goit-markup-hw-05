@@ -5,15 +5,16 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-.nav-list {
-  display: flex;
-  &-items:not(:last-child) {
+.nav {
+  margin-right: 215px;
+  &__list {
+    display: flex;
+  }
+  &__items:not(:last-child) {
     margin-right: 50px;
   }
 }
-.nav {
-  margin-right: 215px;
-}
+
 .header {
-  border: 1px solid getColor("background-header");
+  border-bottom: 1px solid getColor("background-header");
 }

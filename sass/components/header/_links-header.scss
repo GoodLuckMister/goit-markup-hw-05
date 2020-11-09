@@ -11,7 +11,7 @@
     color: getColor("hover");
     fill: getColor("hover");
   }
-  &_activ {
+  &--activ {
     color: getColor("hover");
     &::after {
       content: "";
@@ -24,7 +24,7 @@
     }
   }
 
-  &_cont {
+  &__cont {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &_symbol {
+    &--symbol {
       margin-right: 10px;
     }
   }
